@@ -10,7 +10,8 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"openai": "^5.5.1"
+		"openai": "^5.5.1",
+		"tiktoken": "^1.0.21"
 	},
 	"devDependencies": {
 		"@types/node": "^24.0.3",
