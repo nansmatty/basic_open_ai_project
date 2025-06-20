@@ -6,7 +6,8 @@ const openai = new OpenAI();
 async function main() {
 	const response = await openai.chat.completions.create({
 		model: 'gpt-4o',
-		messages: [{ role: 'user', content: 'How tall is mount everest?' }],
+		messages: [{ role: 'user', content: 'Say something cosmic cool' }],
+		frequency_penalty: 1.5,
 	});
 
 	console.log(response.choices[0].message.content);
@@ -20,4 +21,5 @@ function encodePrompt() {
 	console.log(words);
 }
 
-encodePrompt();
+main();
+// encodePrompt();
